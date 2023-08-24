@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula na Escola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Estilos específicos */
+        header {
+            background-color: #141414;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        footer {
+            background-color: #141414;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form input,
+        form textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        form button {
+            background-color: #e50914;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para o visual da Netflix */
+        .hero-section {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 200px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #e50914;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .content-section {
+            background-color: #222;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .content-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content-card img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .content-card p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .resources-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .resources-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .resources-section ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .contact-section {
+            background-color: #333;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #141414;
+            border: none;
+            padding: 10px 15px;
+            color: #fff;
+        }
+
+        .contact-form button {
+            background-color: #e50914;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-section {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-section p {
+            margin: 0;
+        }
+
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 767px) {
+            .hero-section {
+                padding: 100px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+
+            .hero-section p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+
+            .content-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .content-card {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .content-card img {
+                margin-bottom: 20px;
+            }
+
+            .content-card p {
+                font-size: 14px;
+            }
+
+            .resources-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .contact-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <script>
+        // Código JavaScript pode ser adicionado aqui, se necessário
+    </script>
+</head>
+<body>
+    <header>
+        <h1>TIETA DO AGRESTE</h1>
+        <nav>
+            <ul>
+                <li><a href="#content">Conteúdo</a></li>
+                <li><a href="#resources">Recursos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h1>RESUMO DA OBRA TIETA</h1>
+        <br>
+        <a href="#contact" class="cta-button">Entre em Contato</a>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>RESUMO</h2>
+        <div class="content-card">
+            <img src="about.jpg" alt="Imagem do curso">
+            <p>A narrativa começa quando Tieta, após décadas de exílio auto-imposto, retorna a Santana do Agreste, sua cidade natal, envolta em mistérios e escândalos que a levaram a deixar a cidade anos antes. Seu retorno é um catalisador para uma série de eventos que trazem à tona temas centrais da obra, incluindo sexualidade, moralidade, tradição e modernidade.</p>
+            <br>
+            <p>A personagem Tieta emerge como uma figura complexa e multifacetada. Ela personifica a figura feminina que desafia o papel tradicional atribuído às mulheres na sociedade conservadora. Sua independência, autoconfiança e liberdade sexual desafiam as normas de gênero, questionando as construções patriarcais de poder.</p>
+            <br>
+            <p>Amado tece uma tapeçaria de personagens secundários, cada um representando aspectos diferentes da cultura brasileira. Desde o padre corrupto até o poderoso coronel, cada figura desempenha um papel na exploração das contradições da sociedade. A própria cidade, Santana do Agreste, torna-se um microcosmo de mudança e conflito, enquanto a modernidade colide com os valores tradicionais.</p>
+            <br>
+            <p>A dualidade entre urbanização e ruralidade é um tema recorrente. A cidade grande é representada por Tieta, enquanto a cidade natal permanece ancorada em tradições antigas. Essa tensão simboliza a luta constante entre o passado e o presente, entre a busca da identidade individual e a pressão da conformidade social.</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="content" class="content-section">
+        <h2>AS PROBLEMÁTICA DO LIVRO</h2>
+        <div class="content-card">
+            <img src="section1.jpg" alt="Imagem da Seção 1">
+            <p>1. **Conflito entre Tradição e Modernidade:** O romance explora a tensão entre os valores tradicionais arraigados na sociedade de Santana do Agreste e a influência da modernidade representada por Tieta. Esse conflito é evidente tanto nas atitudes conservadoras da cidade quanto na liberdade de Tieta para seguir seu próprio caminho. </p>
+        </div>
+        <div class="content-card">
+            <img src="section2.jpg" alt="Imagem da Seção 2">
+            <p>Texto, vídeos e materiais relacionados à Seção 2...</p>
+        </div>
+    </section>
+
+    <section id="resources" class="resources-section">
+        <h2>Recursos</h2>
+        <ul>
+            <li><a href="https://exemplo.com">Recurso 1</a></li>
+            <li><a href="https://exemplo.com">Recurso 2</a></li>
+            <li><a href="https://exemplo.com">Recurso 3</a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
+        <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+  </html>
+  
